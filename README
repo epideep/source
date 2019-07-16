@@ -1,0 +1,50 @@
+README authors: Bijaya Adhikari, Xinfeng Xu, and B. Aditya Prakash.
+Dated: July 1, 2019. 
+
+
+This is a reference implementation of the EpiDeep algorithm described in the following paper.
+
+EpiDeep: Exploiting Embeddings for Epidemic Forecasting
+Bijaya Adhikari, Xinfeng Xu, Naren Ramakrishnan and B. Aditya Prakash
+In the 25TH ACM SIGKDD CONFERENCE ON KNOWLEDGE DISCOVERY AND DATA MINING (KDD 2019), August 2019, Anchorage, Alaska - USA
+
+
+Given a partially observed influenza season, EpiDeep forecasts the following
+1) Next four influenza incidence
+2) The peak intensity
+3) The peak time
+4) The onset
+
+==========================================================================================================================================================================================
+
+Requirement: pytorch and sklearn python packages
+
+
+To see a Demo: 
+   make demo
+   
+For help: 
+   make help
+   
+
+Execute:
+   python src/main.py 
+
+Example: python src/main.py --start_week 20 --start_year 2000 --end_year 2017 --region National
+
+==========================================================================================================================================================================================
+Input:
+
+A csv file with ILINet wILI incidence curve
+
+================================================================================================================================================================================================
+Output:
+
+1) CSV file with forecast and evaluations
+2) Embeddings of historical seasons
+
+
+================================================================================================================================================================================================
+Contact:
+
+If you have any questions about the code, please contact Bijaya Adhikari at bijaya[at]cs[dot]vt[dot]edu and/or B. Aditya Prakash badityap[at]cs[dot]vt[dot]edu 
